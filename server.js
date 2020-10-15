@@ -14,13 +14,13 @@ app.get("/", function(req, res) {
 });
 
 
-app.get("/reservations", function(req, res) {
+app.get("/reserve", function(req, res) {
     res.send("Reserved Tables");
   });
 
 
-  app.get("/view", function(req, res) {
-    res.send("See all Tables and reservation");
+  app.get("/table", function(req, res) {
+    res.send("See all Tables");
   });
 // app.get("/:character", function(req, res) {
 //   var chosen = req.params.character;
