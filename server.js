@@ -6,22 +6,16 @@ var app = express();
 var PORT = 3000;
 
 // Data
-
+require('./routes/htmlRoutes')(app);
+require('./routes/apiRoutes')(app);
 // Routes
 // ===========================================================
-app.get("/", function(req, res) {
-  res.send("Reservations Home Page");
-});
 
 
-app.get("/reserve", function(req, res) {
-    res.send("Reserved Tables");
-  });
 
 
-  app.get("/table", function(req, res) {
-    res.send("See all Tables");
-  });
+
+ 
 // app.get("/:character", function(req, res) {
 //   var chosen = req.params.character;
 
